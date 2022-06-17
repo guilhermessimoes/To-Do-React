@@ -35,6 +35,13 @@ export function NewTask(){
     console.log(setNewTaskText(event.target.value))
     setNewTaskText(event.target.value)
   }
+
+  function deleteTask(taskToDelete: string){
+    const tasksWithoutDeletedOne = tasks.filter(task => {
+      return task != taskToDelete
+    })
+    setTasks(tasksWithoutDeletedOne)
+  }
   
   return(
     <>
@@ -49,6 +56,7 @@ export function NewTask(){
         <Task
           id = {task.id}
           title={task.title}
+          onDeleteTask={deleteTask}
         />
       )
     })} 

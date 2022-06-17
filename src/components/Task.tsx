@@ -2,14 +2,17 @@ import { Trash } from 'phosphor-react';
 import { useState } from 'react';
 
 import styles from './Task.module.css';
-import { TaskHeader } from './TaskHeader';
 
-interface ITask {
+interface ITaskProps {
   id?: number;
   title: string;
+  onDeleteTask: (taskToDelete: string) => void;
 }
 
-export function Task({id, title}: ITask){
+export function Task({id, title, onDeleteTask}: ITaskProps){
+  function handleDeleteTask(){
+    onDeleteTask(id)
+  }
   return(
     <>   
     <article className={styles.task}>      
@@ -17,7 +20,9 @@ export function Task({id, title}: ITask){
         <input type="radio"  id="huey" />
         <label htmlFor="huey">{title}</label>
       </div>
+      <button  onClick={handleDeleteTask}>
         <Trash size={22} />
+      </button>
     </article>
     </>
   )
