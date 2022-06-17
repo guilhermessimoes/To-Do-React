@@ -11,6 +11,7 @@
   border-style: none;
   margin-right: 8px;
   text-indent: 0.8rem;
+  color: var(--gray-100);
 }
 
 .NewTask button {
@@ -33,4 +34,41 @@
   background: var(--blue);
   font-weight: bold;
   color: var(--gray-100);  
+}
+
+
+.taskHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.createTask{
+  width: 12.625rem;
+  color: var(--blue);
+}
+
+.countTask{
+  background: var(--gray-400);
+  padding: 4px;
+  border-radius: 8px;
+  color: var(--gray-200);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.done{
+  padding: 2px;
+  color: var(--purple);
+}
+
+
+.countDone{
+  background: var(--gray-400);
+  padding: 4px;
+  border-radius: 8px;
+  color: var(--gray-200);
+  font-weight: bold;
+  font-size: 0.9rem;
 }

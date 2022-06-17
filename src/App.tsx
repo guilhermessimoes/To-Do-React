@@ -1,9 +1,10 @@
-
-import { Header } from './components/header';
-import './global.css';
 import styles from './App.module.css'
+import { Header } from './components/Header';
 import { NewTask } from './components/NewTask';
 import { Task } from './components/Task';
+import { TaskHeader } from './components/TaskHeader';
+
+import './global.css';
 
 export function App() {
   return (
@@ -11,9 +12,6 @@ export function App() {
       <Header />
       <div className={styles.wrapper}>
         <NewTask />
-        <main>
-          <Task />
-        </main>
       </div>
     </>
   )

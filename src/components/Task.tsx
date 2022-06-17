@@ -1,24 +1,21 @@
 import { Trash } from 'phosphor-react';
-import styles from './Task.module.css';
+import { useState } from 'react';
 
-export function Task(){
+import styles from './Task.module.css';
+import { TaskHeader } from './TaskHeader';
+
+interface ITask {
+  id?: number;
+  title: string;
+}
+
+export function Task({id, title}: ITask){
   return(
-    <>
-    <div className={styles.taskHeader}>
-        <span className={styles.createTask}>Tarefas Criadas <span className={styles.countTask}> 5 </span></span>
-        <span  className={styles.done}>Concluidas <span className={styles.countDone}>2 de 5</span></span>
-    </div>
+    <>   
     <article className={styles.task}>      
       <div className={styles.content}>        
         <input type="radio"  id="huey" />
-        <label htmlFor="huey">TEste TEsteTEsteTEsteTEsteTEsteTEsteTEsteTEsteTEsteTEsteTEsteTEste</label>
-      </div>
-        <Trash size={22} />
-    </article>
-    <article className={styles.task}>      
-      <div className={styles.content}>        
-        <input type="radio"  id="huey" />
-        <label htmlFor="huey">TEste TEsteTEsteTEsteTEsteTEsteTEsteTEsteTEsteTEsteTEsteTEsteTEste</label>
+        <label htmlFor="huey">{title}</label>
       </div>
         <Trash size={22} />
     </article>
