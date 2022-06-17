@@ -1,0 +1,36 @@
+.NewTask{
+  margin-bottom: 4rem;
+  display: flex;  
+  align-items: center;
+}
+.NewTask input {
+  height: 3.375rem;
+  width: 37.875rem;
+  background: var(--gray-500);
+  border-radius: 8px;
+  border-style: none;
+  margin-right: 8px;
+  text-indent: 0.8rem;
+}
+
+.NewTask button {
+  height: 3.25rem;
+  width: 5.625rem;
+  background: var(--blueDark);
+  color: var(--gray-100);
+  border-style: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.1s;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.NewTask button:hover {
+  background: var(--blue);
+  font-weight: bold;
+  color: var(--gray-100);  
+}

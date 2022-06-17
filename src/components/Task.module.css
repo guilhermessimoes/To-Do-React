@@ -1,0 +1,85 @@
+.taskHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.createTask{
+  width: 12.625rem;
+  color: var(--blue);
+}
+
+.countTask{
+  background: var(--gray-400);
+  padding: 4px;
+  border-radius: 8px;
+  color: var(--gray-200);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.done{
+  padding: 2px;
+  color: var(--purple);
+}
+
+
+.countDone{
+  background: var(--gray-400);
+  padding: 4px;
+  border-radius: 8px;
+  color: var(--gray-200);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.task{
+  background: var(--gray-500);
+  border-radius: 8px;
+  padding: 2rem;   
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.task + .task{
+  margin-top: 2rem;
+}
+
+
+.content {
+  line-height: 1.6;
+  color: var(--gray-300);
+  justify-content: center;
+}
+.content label{
+  margin-left: 0.5rem; 
+}
+
+input[type="radio"]  {
+  -webkit-appearance: none;
+  display:inline-block;
+  width:20px;
+  height:20px;
+  vertical-align:middle;
+  cursor:pointer;
+  border:2px solid var(--blue);
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked{
+  background:var(--purple);
+  border:none;
+}
+
+input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid var(--purple);
+  outline-offset: max(2px, 0.15em);
+  border:none;
+}
+
+input[type="radio"]:hover {
+  outline: max(2px, 0.15em) solid var(--purple);
+  border:none;
+}
+
