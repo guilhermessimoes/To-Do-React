@@ -6,34 +6,6 @@
   width: 100%;
 }
 
-/* .createTask{
-  width: 12.625rem;
-  color: var(--blue);
-}
-
-.countTask{
-  background: var(--gray-400);
-  padding: 4px;
-  border-radius: 8px;
-  color: var(--gray-200);
-  font-weight: bold;
-  font-size: 0.9rem;
-}
-.done{
-  padding: 2px;
-  color: var(--purple);
-}
-
-
-.countDone{
-  background: var(--gray-400);
-  padding: 4px;
-  border-radius: 8px;
-  color: var(--gray-200);
-  font-weight: bold;
-  font-size: 0.9rem;
-} */
-
 .task{
   background: var(--gray-500);
   border-radius: 8px;
@@ -57,33 +29,34 @@
   margin-left: 0.5rem; 
 }
 
-input[type="radio"]  {
+input[type="checkbox"]  {
   -webkit-appearance: none;
   display:inline-block;
   width:20px;
   height:20px;
+  background-color: transparent;
   vertical-align:middle;
   cursor:pointer;
   border:2px solid var(--blue);
   border-radius: 50%;
-}
+} 
 
-input[type="radio"]:checked{
+
+input[type="checkbox"]:checked{
   background:var(--purple);
   border:none;
 }
 
-input[type="radio"]:focus {
+input[type="checkbox"]:focus {
   outline: max(2px, 0.15em) solid var(--purple);
   outline-offset: max(2px, 0.15em);
   border:none;
 }
 
-input[type="radio"]:hover {
+input[type="checkbox"]:hover {
   outline: max(2px, 0.15em) solid var(--purple);
   border:none;
 }
-
 
 button  {
   background: transparent;
@@ -96,4 +69,8 @@ button  {
 
 button :hover{
   color: var(--danger);
+}
+
+.labelChecked  {
+  text-decoration: line-through;
 }

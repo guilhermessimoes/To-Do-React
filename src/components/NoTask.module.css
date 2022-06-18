@@ -1,0 +1,33 @@
+.task{
+  border-radius: 8px;
+  padding: 2rem;   
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  border-top: solid 2px var(--gray-500);
+  width: 100%;
+}
+
+.taskContent{ 
+  display: grid;  
+  align-items: center;
+  justify-content: center;
+}
+
+.task img{
+  justify-content: center;
+}
+
+
+.task + .task{
+  margin-top: 2rem;
+}
+
+.textNoContent{
+  font-weight: 600;
+  color: var(--gray-300);
+}
+.createTaskContent{
+  color: var(--gray-300);
+}
+
