@@ -99,6 +99,7 @@ export function NewTask(){
       {tasks.map(task =>{
         return(        
           <Task
+            key={task.id}
             id = {task.id}
             title={task.title}
             onDeleteTask={deleteTask}
